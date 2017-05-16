@@ -40,16 +40,16 @@ $(document).ready(function(){
 
 	document.onkeydown = function(e){
 		if(e.keyCode == 37){
-			pacman.x--;
+			packman.x--;
 		}
 		else if(e.keyCode == 39){
-			pacman.x++;
+			packman.x++;
 		}
 		else if(e.keyCode == 38){
-			pacman.y--;
+			packman.y--;
 		}
 		else if(e.keyCode == 40){
-			pacman.y++;
+			packman.y++;
 		}
 	}
 });
