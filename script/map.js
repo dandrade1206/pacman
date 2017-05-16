@@ -31,8 +31,8 @@ $(document).ready(function(){
 	}
 
 	function displayPacman(){
-		document.getElementById('pacman').style.top=packman.y*20+"px";
-		document.getElementById('pacman').style.left=packman.x*20+"px";
+		document.getElementById('pacman').style.top=packman.y*28+"px";
+		document.getElementById('pacman').style.left=packman.x*28+"px";
 	}
 
 	displayWorld();
@@ -51,5 +51,6 @@ $(document).ready(function(){
 		else if(e.keyCode == 40){
 			packman.y++;
 		}
+		displayPacman();
 	}
 });
