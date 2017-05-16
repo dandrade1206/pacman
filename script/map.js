@@ -31,8 +31,10 @@ $(document).ready(function(){
 	}
 
 	function displayPacman(){
-		document.getElementById('pacman').style.top=packman.y*28+"px";
-		document.getElementById('pacman').style.left=packman.x*28+"px";
+		var x = packman.x*28;
+		var y = packman.y*28;
+		$("#pacman").css("top",y+"px");
+		$("#pacman").css("left",x+"px");
 	}
 
 	displayWorld();
@@ -41,15 +43,19 @@ $(document).ready(function(){
 	document.onkeydown = function(e){
 		if(e.keyCode == 37 && world[packman.y][packman.x-1] != -1){ // move Left
 			packman.x--;
+			$("#pacman").css("transform","rotate(0deg)");
 		}
 		else if(e.keyCode == 39 && world[packman.y][packman.x+1] != -1){ // move Up
 			packman.x++;
+			$("#pacman").css("transform","rotate(180deg)");
 		}
 		else if(e.keyCode == 38 && world[packman.y-1][packman.x] != -1){ // move Right
 			packman.y--;
+			$("#pacman").css("transform","rotate(90deg)");
 		}
 		else if(e.keyCode == 40 && world[packman.y+1][packman.x] != -1){ //move Down
-			packman.y++;
+			packman.y++;			
+			$("#pacman").css("transform","rotate(270deg)");
 		}
 		if(world[packman.y][packman.x] == 1) {
 			world[packman.y][packman.x] = 0;
