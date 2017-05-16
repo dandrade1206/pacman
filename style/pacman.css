@@ -1,0 +1,14 @@
+.map {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+.wall {
+	background: blue;
+}
+
+.pellet {
+	background: white;
+}
