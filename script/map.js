@@ -52,6 +52,4 @@ $(document).ready(function(){
 			pacman.y++;
 		}
 	}
-
-
 });
