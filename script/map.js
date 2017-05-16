@@ -21,6 +21,7 @@ function displayWorld() {
 		output += "</div>";
 		console.log(output);
 	}
+	$("#world").html(output);
 }
 
 displayWorld();
