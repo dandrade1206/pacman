@@ -8,8 +8,8 @@ $(document).ready(function(){
 				[-1,-1,-1,-1,-1,-1]];
 
     var packman={
-        x:0,
-        y:0,
+        x:1,
+        y:1,
     };
 
 	function displayWorld() {
@@ -39,18 +39,22 @@ $(document).ready(function(){
 	displayPacman();
 
 	document.onkeydown = function(e){
-		if(e.keyCode == 37){
+		if(e.keyCode == 37 && world[packman.y][packman.x-1] != -1){ // move Left
 			packman.x--;
 		}
-		else if(e.keyCode == 39){
+		else if(e.keyCode == 39 && world[packman.y][packman.x+1] != -1){ // move Up
 			packman.x++;
 		}
-		else if(e.keyCode == 38){
+		else if(e.keyCode == 38 && world[packman.y-1][packman.x] != -1){ // move Right
 			packman.y--;
 		}
-		else if(e.keyCode == 40){
+		else if(e.keyCode == 40 && world[packman.y+1][packman.x] != -1){ //move Down
 			packman.y++;
 		}
+		if(world[packman.y][packman.x] == 1) {
+			world[packman.y][packman.x] = 0;
+		}
+		displayWorld();
 		displayPacman();
 	}
 });
