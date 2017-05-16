@@ -35,6 +35,9 @@ $(document).ready(function(){
     };
 
     var score = 0;
+    // var begAudio = new Audio("../sounds/pacman_beginning.wav");
+    // var chompAudio = new Audio("../sounds/pacman_chomp.wav");
+    // $("#wrapper").append("<audio id='beginning'><source src='../sounds/pacman_beginning.wav' type='audio/wav'></audio>");
 
 	function displayWorld() {
 		var output = "";
@@ -73,6 +76,7 @@ $(document).ready(function(){
 		if(e.keyCode == 37 && world[packman.y][packman.x-1] != -1){ // move Left
 			packman.x--;
 			$("#pacman").css("transform","rotate(0deg)");
+			// $("#beginning").play();
 		}
 		else if(e.keyCode == 39 && world[packman.y][packman.x+1] != -1){ // move Up
 			packman.x++;
@@ -87,6 +91,7 @@ $(document).ready(function(){
 			$("#pacman").css("transform","rotate(270deg)");
 		}
 		if(world[packman.y][packman.x] == 1) {
+			// chompAudio.play();
 			world[packman.y][packman.x] = 0;
 			score += 10;
 			displayWorld();
