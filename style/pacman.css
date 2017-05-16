@@ -1,31 +1,18 @@
-body {
-	background-color: black;
-}
-
-div.row div{
+.map {
 	width: 20px;
 	height: 20px;
 	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+.wall {
+	background: blue;
 }
 
-div.wall {
-	background-color: blue;
-}
-
-div.dot {
-	background: url("./img/dot.png");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-div.empty {
-
-}
-
-<<<<<<< HEAD
 .dot {
 	background: white;
-=======
+
+}
 div#pacman {
 	background: url("./img/pacman.gif");
 	background-repeat: no-repeat;
@@ -34,5 +21,4 @@ div#pacman {
 	width: 20px;
 	height: 20px;
 	position: absolute;
->>>>>>> 0b07019b24e47f5342112b977c024665e40560af
 }
