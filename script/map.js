@@ -12,6 +12,8 @@ $(document).ready(function(){
         y:1,
     };
 
+    var score = 0;
+
 	function displayWorld() {
 		var output = "";
 		for(var i=0; i < world.length; i++) {
@@ -37,8 +39,13 @@ $(document).ready(function(){
 		$("#pacman").css("left",x+"px");
 	}
 
+	function displayScore() {
+		$("#scoreboard").html("<h1>SCORE: "+score+"</h1>");
+	}
+
 	displayWorld();
 	displayPacman();
+	displayScore();
 
 	document.onkeydown = function(e){
 		if(e.keyCode == 37 && world[packman.y][packman.x-1] != -1){ // move Left
@@ -59,8 +66,10 @@ $(document).ready(function(){
 		}
 		if(world[packman.y][packman.x] == 1) {
 			world[packman.y][packman.x] = 0;
+			score += 10;
+			displayWorld();
+			displayScore();
 		}
-		displayWorld();
 		displayPacman();
 	}
 });

@@ -6,6 +6,11 @@
 body{
 	background-color: black;
 }
+
+#world{
+	display: inline-block;
+}
+
 div.row div{
 	width: 28px;
 	height: 28px;
@@ -34,4 +39,12 @@ div#pacman {
 	width: 28px;
 	height: 28px;
 	position: absolute;
+}
+
+div#scoreboard {
+	display: inline-block;
+	color: white;
+	border: thick solid white;
+	padding: 10px;
+	vertical-align: top;
 }
