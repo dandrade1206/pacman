@@ -19,6 +19,7 @@ function displayWorld() {
 			}
 		}
 		output += "</div>";
+		console.log(output);
 	}
 }
 
