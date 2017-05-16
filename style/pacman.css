@@ -1,24 +1,33 @@
-.map {
-	width: 20px;
-	height: 20px;
+body{
+	background-color: black;
+	margin: 0;
+}
+div.row div{
+	width: 28px;
+	height: 28px;
 	display: inline-block;
-	margin: 0px;
-	padding: 0px;
-}
-.wall {
-	background: blue;
+	margin: 0px 2px;
 }
 
-.dot {
-	background: white;
 
+div.wall {
+	background-color: blue;
 }
+
+div.dot {
+	background:url("../img/dot.png");
+	background-size: 5px 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+div.empty{}
+
 div#pacman {
-	background: url("./img/pacman.gif");
+	background: url("../img/pacman.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 20px;
-	height: 20px;
+	width: 28px;
+	height: 28px;
 	position: absolute;
 }
