@@ -20,6 +20,7 @@ function displayWorld() {
 		}
 		output += "</div>";
 	}
+	$("#world").html(output);
 }
 
 displayWorld();
