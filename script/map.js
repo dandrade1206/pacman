@@ -27,7 +27,6 @@ $(document).ready(function(){
 			}
 			output += "</div>";
 		}
-		console.log(output);
 		$('#world').html(output);
 	}
 
