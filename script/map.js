@@ -27,15 +27,13 @@ $(document).ready(function(){
 			}
 			output += "</div>";
 		}
-		//console.log(output);
+		console.log(output);
 		$('#world').html(output);
 	}
 
 	function displayPacman(){
-		var x = packman.x*30;
-		var y = packman.y*30;
-		$("#pacman").css("top",y+"px");
-		$("#pacman").css("left",x+"px");
+		document.getElementById('pacman').style.top=packman.y*20+"px";
+		document.getElementById('pacman').style.left=packman.x*20+"px";
 	}
 
 	displayWorld();
@@ -43,21 +41,18 @@ $(document).ready(function(){
 
 	document.onkeydown = function(e){
 		if(e.keyCode == 37){
-			packman.x--;
+			pacman.x--;
 		}
 		else if(e.keyCode == 39){
-			packman.x++;
+			pacman.x++;
 		}
 		else if(e.keyCode == 38){
-			packman.y--;
+			pacman.y--;
 		}
 		else if(e.keyCode == 40){
-			packman.y++;
+			pacman.y++;
 		}
-		displayPacman();
 	}
-
-
 
 
 });
