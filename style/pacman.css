@@ -1,12 +1,25 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
 	background-color: black;
-	margin: 0;
 }
+
+div.row {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+
 div.row div{
-	width: 28px;
-	height: 28px;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
 	display: inline-block;
-	margin: 0px 2px;
 }
 
 
@@ -27,7 +40,9 @@ div#pacman {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 28px;
-	height: 28px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
+	top: 150px;
+	left: 150px;
 }
