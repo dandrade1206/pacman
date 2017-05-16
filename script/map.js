@@ -8,6 +8,7 @@ var packman={
 	x:0,
 	y:0,
 }
+
 $(document).ready(function(){
 	function displayWorld() {
 		var output = "";
@@ -27,6 +28,7 @@ $(document).ready(function(){
 		console.log(output);
 		$('#world').html(output);
 	}
+
 	function displayPacman(){
 		document.getElementById('pacman').style.tom=packman.y*20+"px";
 		document.getElementById('pacman').style.left=packman.x*20+"px";
