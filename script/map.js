@@ -34,4 +34,18 @@ function displayPacman(){
 displayWorld();
 displayPacman();
 
+document.onkeydown = function(e){
+	if(e.keyCode == 37){
+		pacman.x--;
+	}
+	else if(e.keyCode == 39){
+		pacman.x++;
+	}
+	else if(e.keyCode == 38){
+		pacman.y--;
+	}
+	else if(e.keyCode == 40){
+		pacman.y++;
+	}
+}
 
