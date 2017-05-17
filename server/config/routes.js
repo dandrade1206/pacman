@@ -5,16 +5,23 @@ module.exports=function(app){
     });
 
     app.post('/results', function(req,res){
-
         if(req.body.game == 'pacman'){
-            res.render('pacman.ejs', {name: req.body.name});
+            res.redirect('/games/pacman/' + req.body.name);
         }
         if(req.body.game == 'tetris'){
-            res.render('tetris.ejs', {name: req.body.name});
+            res.redirect('/games/tetris/' + req.body.name)
         }
 
     });
 
+    app.get('/games/pacman/:name', function(req,res){
+        var name = req.params.name;
+        res.render('pacman.ejs', {name: name});
+    });
 
+    app.get('/games/tetris/:name', function(req,res){
+        var name = req.params.name;
+        res.render('tetris.ejs', {name: name});
+    });
 
 };

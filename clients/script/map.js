@@ -33,8 +33,8 @@ $(document).ready(function(){
     };
 
     var score = 0;
-    var begAudio = new Audio("./sounds/pacman_beginning.wav");
-    var chompAudio = new Audio("./sounds/pacman_chomp.wav");
+    var begAudio = new Audio("/sounds/pacman_beginning.wav");
+    var chompAudio = new Audio("/sounds/pacman_chomp.wav");
     // $("#wrapper").append("<audio id='beginning'><source src='../sounds/pacman_beginning.wav' type='audio/wav'></audio>");
 
 	function displayWorld() {
