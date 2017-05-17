@@ -5,12 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="/style/login.css">
 </head>
 <body>
-	<form action = '/results' method="post">
-		<input type='text' name = 'name' placeholder="enter username">
-		<input type='text' name = 'password' placeholder="enter password">
-		<input type='radio' name = 'game' value="pacman">Pacman
-		<input type='radio' name = 'game' value="tetris">Tetris
-		<input type='submit' name = 'submit'>
-	</form>
+	
+	<div id="loginform">
+		<form action = '/results' method="post">
+			<h2>Game Central!</h2>
+			<br><h4>Login</h4>
+			<input type='text' name = 'name' placeholder="enter username"><br>
+			<input type='text' name = 'password' placeholder="enter password"><br>
+			<br><h4>Select a game to play</h4>
+			<input type='radio' name = 'game' value="pacman">Pacman
+			<input type='radio' name = 'game' value="tetris">Tetris
+			<input type='submit' name = 'submit'>
+		</form>
+	</div>
 </body>
 </html>

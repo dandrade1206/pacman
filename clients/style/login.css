@@ -1,0 +1,16 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+div{
+	margin: auto;
+	width: 20%;
+}
+
+form{
+	color: white;
+}
+body{
+	background-color: black;
+}
