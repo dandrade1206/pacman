@@ -5,8 +5,15 @@ module.exports=function(app){
     });
 
     app.post('/results', function(req,res){
-        res.render('pacman.ejs', {name: req.body.name});
+        if(req.body.game == 'pacman'){
+            res.render('pacman.ejs', {name: req.body.name});
+        }
+        if(req.body.game == 'tetris'){
+            res.render('tetris.ejs', {name: req.body.name});
+        }
 
     });
+
+
 
 };
