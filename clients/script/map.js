@@ -65,7 +65,7 @@ $(document).ready(function(){
 	}
 
 	function displayScore() {
-		$("#scoreboard").html("<h1>SCORE: "+score+"</h1>");
+		$("#score").html("<h1>SCORE: "+score+"</h1>");
 	}
 
 	displayWorld();

@@ -3,6 +3,9 @@
 	padding: 0px;
 }
 
+#name{
+	color:white;
+}
 body{
 	background-color: black;
 }
@@ -48,11 +51,17 @@ div#pacman {
 	height: 28px;
 	position: absolute;
 }
-
-div#scoreboard {
-	display: inline-block;
-	color: white;
+#scoreboard{
+	display:inline-block;
+	vertical-align: top;
 	border: thick solid white;
 	padding: 10px;
+	color:white;
+
+}
+
+#score {
+	display: inline-block;
+	color: white;
 	vertical-align: top;
 }

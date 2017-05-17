@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pacman</title>
-		<link rel="stylesheet" type="text/css" href="clients/style/pacman.css">
+		<title>Pacman - ejs</title>
+		<link rel="stylesheet" type="text/css" href="../style/pacman.css">
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="clients/script/map.js"></script>
+		<script src="../script/map.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -12,8 +12,12 @@
 			</div>
 			<div id="pacman"></div>
 			<div id="scoreboard">
+				<h2>Username:<br>
+					<%=name%></h2>
+				<br>
+				<p id="score"></p>
 			</div>
-			<div id="name"><%=name%></div>
+			<div id="name"></div>
 		</div>
 	</body>
 </html>

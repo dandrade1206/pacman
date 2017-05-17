@@ -5,11 +5,11 @@ var path=require('path');
 var port=8000;
 
 app.use(bp.urlencoded());
-app.use(express.static(path.join(__dirname + '/client')));
-app.set('views', path.join(__dirname + '/client/templates'));
+app.use(express.static(path.join(__dirname + '/clients')));
+app.set('views', path.join(__dirname + '/clients/templates'));
 app.set('view engine', 'ejs');
 
-//require('./server/config/routes.js')(app);
+require('./server/config/routes.js')(app);
 app.listen(port,function(){
     console.log('server running');
 });
