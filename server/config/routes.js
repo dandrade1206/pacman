@@ -1,10 +1,11 @@
 module.exports=function(app){
 
-    app.get('/pacman/login', function(req,res){
+    app.get('/games/login', function(req,res){
         res.render('login.ejs');
     });
 
     app.post('/results', function(req,res){
+
         if(req.body.game == 'pacman'){
             res.render('pacman.ejs', {name: req.body.name});
         }
